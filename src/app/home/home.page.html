@@ -1,37 +1,4 @@
-<ion-menu content-id="main-cont">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>
-        Content
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>
-        <ion-label>
-          <a class="nav-link" href="/home">Home</a>
-        </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          <a class="nav-link" href="/notes">Notes</a>
-        </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          <a class="nav-link">Account</a>
-        </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          <a class="nav-link">About</a>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
-
+<app-navbar></app-navbar>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-img alt="logo" slot="start" class="img-logo" src="./assets/icon/mem_logo.png"></ion-img>
@@ -50,7 +17,7 @@
       </ion-title>
       <ion-row>
         <p class="use-the">Use the</p>
-        <ion-button>Memorist Notes</ion-button>
+        <ion-button href="/notes">Memorist Notes</ion-button>
       </ion-row>
     </ion-col>
   </ion-grid>
