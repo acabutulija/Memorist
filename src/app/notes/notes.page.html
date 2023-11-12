@@ -1,13 +1,35 @@
+<app-navbar></app-navbar>
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>notes</ion-title>
+    <ion-img alt="logo" slot="start" class="img-logo" src="./assets/icon/mem_logo.png"></ion-img>
+    <ion-title class="nav-title">Notes</ion-title>
+    <ion-menu-button slot="end" auto-hide="false" class="menu-btn"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">notes</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title size="large">notes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" id="main-cont">
+
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="/notes">
+      <ion-icon src="./assets/icon/list-outline.svg"></ion-icon>
+      My Notes
+    </ion-tab-button>
+    <ion-tab-button tab="/new-note">
+      <ion-icon src="./assets/icon/document-outline.svg"></ion-icon>
+      New Note
+    </ion-tab-button>
+    <ion-tab-button tab="/login">
+      <ion-icon src="./assets/icon/person-outline.svg"></ion-icon>
+      Account
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
