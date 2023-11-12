@@ -25,3 +25,48 @@
 #container a {
   text-decoration: none;
 }
+
+.img-logo {
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+}
+
+ion-toolbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-title {
+  padding-left: 10px;
+}
+
+/*@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.menu-btn {
+  animation: fadeOut 0.5s ease-in-out;
+}*/
+
+.nav-link {
+  color: lightgray;
+}
+
+.nav-link:active {
+  color: blue;
+}
+
+.home-main-grid {
+  height: 100% ;
+}
+
+.use-the {
+  padding: 20px 15px 20px 20px;
+  margin: 0;
+}

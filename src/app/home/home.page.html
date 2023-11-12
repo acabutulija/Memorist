@@ -1,20 +1,57 @@
+<ion-menu content-id="main-cont">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Content
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <a class="nav-link">Home</a>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <a class="nav-link">Notes</a>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <a class="nav-link">Account</a>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <a class="nav-link">About</a>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-img alt="logo" slot="start" class="img-logo" src="./assets/icon/mem_logo.png"></ion-img>
+    <ion-title class="nav-title">
+      Memorist
     </ion-title>
+    <ion-menu-button slot="end" auto-hide="false" class="menu-btn"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content [fullscreen]="true" id="main-cont">
+  <ion-grid class="home-main-grid">
+    <ion-col class="ion-align-items-center">
+      <ion-title>
+        <h1>Tired of forgetting?</h1>
+      </ion-title>
+      <ion-row>
+        <p class="use-the">Use the</p>
+        <ion-button>Memorist Notes</ion-button>
+      </ion-row>
+    </ion-col>
+  </ion-grid>
 </ion-content>
