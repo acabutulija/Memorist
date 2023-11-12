@@ -10,11 +10,12 @@ import {
   IonTitle,
   IonToolbar
 } from "@ionic/angular/standalone";
+import {FooterComponent} from "./footer/footer.component";
+import {IonicModule} from "@ionic/angular";
 
 @NgModule({
   declarations: [
-     // Include your NavbarComponent here
-    // Other components in the app
+
   ],
   imports: [
     IonContent,
@@ -25,18 +26,19 @@ import {
     IonMenu,
     IonTitle,
     IonToolbar,
-    NavbarComponent
-
-    // Other necessary modules
+    IonicModule.forRoot(),
+    NavbarComponent,
+    FooterComponent,
   ],
   providers: [
-    // Services for the app
+
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent,
   ],
   bootstrap: [
-    // The main component of your app
+
   ]
 })
 export class AppModule {}
