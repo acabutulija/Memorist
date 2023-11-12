@@ -7,11 +7,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-header collapse="condense">
-  <ion-toolbar>
-    <ion-title size="large">notes</ion-title>
-  </ion-toolbar>
-</ion-header>
+<!--<ion-header collapse="condense">-->
+<!--  <ion-toolbar>-->
+<!--    <ion-title size="large">notes</ion-title>-->
+<!--  </ion-toolbar>-->
+<!--</ion-header>-->
 
 <ion-content [fullscreen]="true" id="main-cont">
 
@@ -19,15 +19,15 @@
 
 <ion-tabs>
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="/notes">
+    <ion-tab-button tab="">
       <ion-icon src="./assets/icon/list-outline.svg"></ion-icon>
       My Notes
     </ion-tab-button>
-    <ion-tab-button tab="/new-note">
+    <ion-tab-button tab="new">
       <ion-icon src="./assets/icon/document-outline.svg"></ion-icon>
       New Note
     </ion-tab-button>
-    <ion-tab-button tab="/login">
+    <ion-tab-button href="/account">
       <ion-icon src="./assets/icon/person-outline.svg"></ion-icon>
       Account
     </ion-tab-button>

@@ -1,13 +1,33 @@
+<app-navbar></app-navbar>
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>account</ion-title>
+    <ion-img alt="logo" slot="start" class="img-logo" src="./assets/icon/mem_logo.png"></ion-img>
+    <ion-title class="nav-title">Account</ion-title>
+    <ion-menu-button slot="end" auto-hide="false" class="menu-btn"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" id="main-cont">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">account</ion-title>
     </ion-toolbar>
   </ion-header>
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button href="/notes">
+      <ion-icon src="./assets/icon/list-outline.svg"></ion-icon>
+      My Notes
+    </ion-tab-button>
+    <ion-tab-button tab="">
+      <ion-icon src="./assets/icon/document-outline.svg"></ion-icon>
+      New Note
+    </ion-tab-button>
+    <ion-tab-button href="/account">
+      <ion-icon src="./assets/icon/person-outline.svg"></ion-icon>
+      Account
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -12,18 +12,14 @@ export const routes: Routes = [
   },
   {
     path: 'notes',
-    loadComponent: () => import('./notes/notes.page').then( m => m.NotesPage)
+    loadComponent: () => import('./notes/notes.page').then( m => m.NotesPage),
+  },
+  {
+    path: 'notes/new',
+    loadComponent: () => import('./new-note/new-note.component').then(m => m.NewNoteComponent),
   },
   {
     path: 'account',
-    loadComponent: () => import('./account/account.page').then( m => m.AccountPage)
-  },
-  {
-    path: 'new-note',
-    loadComponent: () => import('./new-note/new-note.component').then(m => m.NewNoteComponent)
-  },
-  {
-    path: 'login',
-    loadComponent: () => import('./account-component/account-component.component').then(m => m.AccountComponentComponent)
+    loadComponent: () => import('./account/account.page').then(m => m.AccountPage),
   }
 ];
