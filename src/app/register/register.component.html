@@ -2,7 +2,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-img alt="logo" slot="start" class="img-logo" src="./assets/icon/mem_logo.png"></ion-img>
-    <ion-title class="nav-title">Login</ion-title>
+    <ion-title class="nav-title">Register</ion-title>
     <ion-menu-button slot="end" auto-hide="false" class="menu-btn"></ion-menu-button>
   </ion-toolbar>
 </ion-header>
@@ -10,16 +10,19 @@
 <ion-content [fullscreen]="true" id="main-cont">
   <ion-list>
     <ion-item>
-      <ion-input label="Email" type="email"></ion-input>
+      <ion-input label="Email" type="email" [(ngModel)]="email"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input label="Password" type="password"></ion-input>
+      <ion-input label="Password" type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-button>Login</ion-button>
+      <ion-input label="Repeat password" type="password"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label><a href="/account/register">Create an account.</a></ion-label>
+      <ion-button expand="block">Create account</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label color="danger">Do not use a password that you use elsewhere.</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>

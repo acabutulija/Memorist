@@ -1,6 +1,5 @@
 export const environment = {
-  production: false,
-  firebase:{
+    firebaseConfig: {
     apiKey: "AIzaSyDiuu1Kxp5U6OKTySziCNuavO2Zq2I2gAg",
     authDomain: "memoristdb.firebaseapp.com",
     projectId: "memoristdb",

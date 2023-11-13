@@ -8,11 +8,10 @@ import {
   IonList,
   IonMenu,
   IonTitle,
-  IonToolbar
+  IonToolbar,
 } from "@ionic/angular/standalone";
 import {FooterComponent} from "./footer/footer.component";
 import {IonicModule} from "@ionic/angular";
-
 @NgModule({
   declarations: [
 

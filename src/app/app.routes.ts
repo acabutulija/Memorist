@@ -21,5 +21,13 @@ export const routes: Routes = [
   {
     path: 'account',
     loadComponent: () => import('./account/account.page').then(m => m.AccountPage),
-  }
+  },
+  {
+    path: 'account/login',
+    loadComponent: () => import('./login/login.component').then(m => m.LoginComponent),
+  },
+  {
+    path: 'account/register',
+    loadComponent: () => import('./register/register.component').then(m => m.RegisterComponent),
+  },
 ];
