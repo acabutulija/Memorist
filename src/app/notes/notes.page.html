@@ -17,13 +17,25 @@
 
 </ion-content>
 
+<ion-list class="notes-list">
+  <ion-content>
+    <ion-list>
+      <app-note-item></app-note-item>
+      <app-note-item></app-note-item>
+    </ion-list>
+    <ion-infinite-scroll>
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-list>
+
 <ion-tabs>
   <ion-tab-bar slot="bottom">
     <ion-tab-button [disabled]="true" class="disabled-tab-button">
       <ion-icon src="./assets/icon/list-outline.svg"></ion-icon>
       My Notes
     </ion-tab-button>
-    <ion-tab-button tab="new">
+    <ion-tab-button href="/notes/new">
       <ion-icon src="./assets/icon/document-outline.svg"></ion-icon>
       New Note
     </ion-tab-button>
